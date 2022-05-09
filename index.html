@@ -132,6 +132,7 @@
                     'assets/uw_theme/{z}/{x}/{y}.png'
                 ],
                 'tileSize': 256,
+
             });
 
             map.addSource('traffic-detector-tiles', {
@@ -164,6 +165,8 @@
                 'layout': {
                     'visibility': 'none'
                 },
+                'minzoom': 9,
+                'maxzoom': 14,
                 'source': 'uw-tiles'
             });
 
@@ -173,6 +176,8 @@
                 'layout': {
                     'visibility': 'none'
                 },
+                'minzoom': 9,
+                'maxzoom': 14,
                 'source': 'traffic-detector-tiles'
             });
 
@@ -182,6 +187,8 @@
                 'layout': {
                     'visibility': 'none'
                 },
+                'minzoom': 9,
+                'maxzoom': 14,
                 'source': 'basemap-tiles'
             });
 
@@ -191,6 +198,8 @@
                 'layout': {
                     'visibility': 'none'
                 },
+                'minzoom': 9,
+                'maxzoom': 14,
                 'source': 'basemap-traffic-detector-tiles'
             });
         });
@@ -263,7 +272,7 @@
         unit: 'imperial'
         });
         map.addControl(scale);
-        
+
     </script>
 </body>
 
